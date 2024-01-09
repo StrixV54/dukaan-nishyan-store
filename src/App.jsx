@@ -2,11 +2,12 @@ import LogoImg from "./assets/image.png";
 import { FaChevronDown } from "react-icons/fa";
 import { GoHome } from "react-icons/go";
 import { BsQuestionCircle } from "react-icons/bs";
+import { FiSearch } from "react-icons/fi";
 
 function App() {
   return (
     <div className="w-full flex h-full flex-row">
-      <div className="w-[354px] bg-[#1E2640] p-[10px] text-white h-[100vh]">
+      <div className="w-[312px] bg-[#1E2640] p-[10px] text-white h-[100vh]">
         <div className="flex flex-row gap-2 text-center p-2 justify-between">
           <img
             alt="logo"
@@ -59,21 +60,24 @@ function App() {
       </div>
       <div className="flex flex-col w-full bg-[#FAFAFA]">
         <div className="navbar flex flex-row w-full bg-white h-[68px] shadow-sm justify-between items-center px-8">
-          <div>Payments</div>
-          <div className="flex justify-center items-center gap-2 text-[0.8rem]">
-            <BsQuestionCircle />
-            How it works
+          <div className="gap-6">
+            <span>Payments</span>
+            <div className="flex justify-center items-center gap-2 text-[0.8rem]">
+              <BsQuestionCircle />
+              How it works
+            </div>
           </div>
-          <div>
+          <div className="p-2 bg-[#f6f6f6] rounded-md">
+            <FiSearch className="opacity-[60%] mx-2" />
             <input
-              className="bg-[#FAFAFA] shadow-sm"
+              className=" bg-transparent shadow-sm"
               placeholder="Search features, tutorials, etc."
-            ></input>
+            />
           </div>
           <div></div>
         </div>
         <div className="m-8">
-          <h6 className="mb-6">Overview</h6>
+          <h6 className="mb-6 text-[1.3rem] font-semibold">Overview</h6>
           <div className="w-full flex flex-row gap-4">
             <div className="bg-white shadow-sm p-4 border-radius-2 flex-1">
               <div className="text-[0.9rem] mb-2">Online orders</div>
@@ -86,11 +90,19 @@ function App() {
           </div>
         </div>
         <div className="m-8">
-          <h1 className="mb-6">Transactions | This Month</h1>
+          <h1 className="mb-6 text-[1.3rem] font-semibold">
+            Transactions | This Month
+          </h1>
           <div className="w-full flex flex-row gap-4">
-            <div className="bg-white shadow-sm p-2 rounded flex-1">
-              <div className="mb-1">
-                <div className=""></div>
+            <div className="bg-white shadow-sm p-3 rounded flex-1">
+              <div className="flex flex-row mb-3">
+                <div className="p-2 border border-[#cccccc] rounded-md flex items-center">
+                  <FiSearch className="opacity-[60%] mx-2" />
+                  <input
+                    className=" bg-transparent shadow-sm"
+                    placeholder="Search by order ID..."
+                  />
+                </div>
               </div>
               <table className="table-auto w-full">
                 <thead className="bg-gray-200 text-[1rem]">
