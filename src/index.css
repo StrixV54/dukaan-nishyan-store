@@ -15,6 +15,7 @@ body {
   margin: 0;
   place-items: center;
   color: black;
+  box-sizing: border-box;
 }
 
 .root {
