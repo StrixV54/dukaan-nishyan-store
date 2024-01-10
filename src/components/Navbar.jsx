@@ -43,7 +43,7 @@ export default function Navbar() {
   return (
     <div className="navbar flex flex-row w-full bg-white shadow-sm justify-between items-center px-8 py-4">
       <div className="flex gap-6">
-        <span>Payments</span>
+        <span className="text-[1.1rem] text-black font-[400]">Payments</span>
         <div className="flex justify-center items-center gap-2 text-[0.8rem]">
           <BsQuestionCircle />
           How it works
