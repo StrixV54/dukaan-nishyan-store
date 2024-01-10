@@ -111,8 +111,8 @@ export default function Transaction() {
         </h1>
       </div>
       <div className="w-full flex flex-row gap-4">
-        <div className="bg-white shadow-sm p-3 rounded flex-1">
-          <div className="flex flex-row mb-3 justify-between">
+        <div className="bg-white shadow-sm p-4 rounded flex-1">
+          <div className="flex flex-row mb-4 justify-between">
             <div className="p-2 border border-[#cccccc] rounded-md flex items-center">
               <FiSearch className="opacity-[60%] mx-2" />
               <input
@@ -166,7 +166,7 @@ export default function Transaction() {
               ))}
             </tbody>
           </table>
-          <div className="p-2 mt-2 w-full items-center justify-center flex gap-2">
+          <div className="p-2 mt-4 w-full items-center justify-center flex gap-2">
             <button className="px-3 py-2 border border-[#cccccc] rounded flex items-center gap-2">
               <GrPrevious />
               Previous

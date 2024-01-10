@@ -70,8 +70,8 @@ export default function Sidebar() {
         </li>
       </ul>
       <div className="mt-auto bg-white/10 p-2 m-2 rounded flex items-center gap-3">
-        <div className="h-[40px] w-[40px] rounded bg-white/5 shadow-md flex items-center justify-center">
-          <CiWallet className="text-white text-[1.8rem]" />
+        <div className="h-[35px] w-[35px] rounded-md bg-white/5 shadow-md flex items-center justify-center">
+          <CiWallet className="text-white text-[1.6rem]" />
         </div>
         <div className="flex flex-col">
           <div className=" text-[0.8rem]">Available Credits</div>
