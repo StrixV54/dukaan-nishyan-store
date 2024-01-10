@@ -57,10 +57,10 @@ export default function Navbar() {
         />
       </div>
       <div className="flex gap-2">
-        <div className="bg-[#E6E6E6] h-[40px] w-[40px] rounded-full flex items-center justify-center">
+        <div className="bg-[#E6E6E6] h-[40px] w-[40px] rounded-full flex items-center justify-center cursor-pointer">
           {MediaSVG}
         </div>
-        <div>{DownSVG}</div>
+        <div className="cursor-pointer">{DownSVG}</div>
       </div>
     </div>
   );
