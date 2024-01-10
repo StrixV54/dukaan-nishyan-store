@@ -131,28 +131,32 @@ export default function Transaction() {
             </div>
           </div>
           <table className="table-auto w-full">
-            <thead className="bg-gray-200 text-[1rem]">
+            <thead className="bg-[#F2F2F2] text-[1rem]">
               <tr>
-                <th className="text-left pl-3 font-light rounded-s-md py-2">
+                <th className="text-left pl-3 font-[500] text-[#4D4D4D] rounded-s-md py-3">
                   Order ID
                 </th>
-                <th className="text-left pl-3 font-light flex items-center  gap-2 py-2">
-                  Order date
-                  {DownSVG}
+                <th className="text-left pl-3 font-[500] text-[#4D4D4D] py-2">
+                  <div className="flex items-center gap-2">
+                    Order date
+                    {DownSVG}
+                  </div>
                 </th>
-                <th className="text-right pr-3 font-light  py-2">
+                <th className="text-right pr-3 font-[500] text-[#4D4D4D] py-2">
                   Order amount
                 </th>
-                <th className="text-right pr-3 font-light rounded-e-md py-2 flex items-center flex-row-reverse gap-2">
-                  {InfoSVG}
-                  Transaction fees
+                <th className="text-right pr-3 font-[500] text-[#4D4D4D] rounded-e-md py-2">
+                  <div className="flex items-center flex-row-reverse gap-2">
+                    {InfoSVG}
+                    Transaction fees
+                  </div>
                 </th>
               </tr>
             </thead>
             <tbody>
               {[...Array(8)].map((_x, ind) => (
                 <tr key={ind} className="border-b-[2px]">
-                  <td className="py-2 pl-2">
+                  <td className="py-3 pl-2">
                     <a className="text-blue-700">#281209</a>
                   </td>
                   <td className="pl-3">7 July, 2023</td>
