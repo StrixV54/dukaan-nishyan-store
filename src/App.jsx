@@ -1,4 +1,4 @@
-import LogoImg from "./assets/image.png";
+import LogoImg from "./assets/Image.png";
 import { FaChevronDown } from "react-icons/fa";
 import { GoHome } from "react-icons/go";
 import { BsQuestionCircle } from "react-icons/bs";
